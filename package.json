@@ -1,0 +1,19 @@
+{
+  "name": "extract-words-from-pdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "EXPECTED_REPEAT_TIMES=4 npx ts-node ./index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pdf-to-text": "^0.0.7",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11"
+  }
+}

@@ -71,7 +71,8 @@ function generateWordList(expectRepeatTimes: number): string[] {
   return result;
 }
 
-const WORD = /^[a-z]+$/i;
+const WORD = /^[a-z]{2,}$/i;
+const COMPOUND_WORD = /^[a-zA-Z][^A-Z]+[A-Z]\w+/;
 function extractWords(str: string): string[] {
-  return str.split(/\s+/).filter((w) => WORD.test(w));
+  return str.split(/\s+/).filter((w) => WORD.test(w) && !COMPOUND_WORD.test(w));
 }

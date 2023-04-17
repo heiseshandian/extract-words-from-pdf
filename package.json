@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "EXPECTED_REPEAT_TIMES=4 npx ts-node ./index.ts"
+    "build": "EXPECTED_REPEAT_TIMES=2 npx ts-node ./index.ts"
   },
   "keywords": [],
   "author": "",
